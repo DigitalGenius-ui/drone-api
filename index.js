@@ -1,5 +1,6 @@
 const express = require("express");
 const products = require("./data/products");
+const slides = require("./data/slides");
 
 const app = express();
 
@@ -11,6 +12,10 @@ app.get("/", (req, res) => {
 
 app.get("/products", (req, res) => {
     res.send(products);
+});
+
+app.get("/slides", (req, res) => {
+    res.send(slides);
 });
 
 const port = process.env.PORT || 5000;
