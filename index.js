@@ -9,15 +9,15 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.send("Welcome to Drone api link...");
+  res.send("Welcome to Drone api link...");
 });
 
 app.get("/products", (req, res) => {
-    res.send(products);
+  res.send(products);
 });
 
 app.get("/slides", (req, res) => {
-    res.send(slides);
+  res.send(slides);
 });
 
 const port = process.env.PORT || 5000;
