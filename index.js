@@ -1,6 +1,6 @@
 const express = require("express");
 const products = require("./data/products");
-const slides = require("./data/slides");
+const slides = require("./data/slide");
 
 const app = express();
 
